@@ -11,13 +11,24 @@ fn fib(n: u32) -> u32 {
 }
 
 fn main() {
-    let mut s = String::new();
+    println!("To quit the program, type 'exit'.");
 
-    io::stdin()
-        .read_line(&mut s)
-        .expect("Failed to read line.");
+    loop {
+        let mut s = String::new();
 
-    let n = s.trim().parse::<u32>().unwrap();
+        io::stdin()
+            .read_line(&mut s)
+            .expect("Failed to read line.");
 
-    println!("The {}-th fibonacci is: {}", n, fib(n));
+        if s.trim() == "exit" {
+            break;
+        }
+
+        let n: u32 = match s.trim().parse() {
+            Ok(n) => n,
+            Err(_) => continue,
+        };
+
+        println!("The {}-th fibonacci is: {}", n, fib(n));
+    }
 }
