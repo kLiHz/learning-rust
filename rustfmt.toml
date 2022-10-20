@@ -1,0 +1,9 @@
+brace_style = "SameLineWhere"
+combine_control_expr = false
+condense_wildcard_suffixes = true
+empty_item_single_line = false
+indent_style = "Visual"
+match_block_trailing_comma = true
+newline_style = "Unix"
+reorder_impl_items = true
+spaces_around_ranges = true
