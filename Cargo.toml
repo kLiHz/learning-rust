@@ -14,3 +14,7 @@ path = "src/fibo-seq-recursive.rs"
 [[bin]]
 name = "first-word"
 path = "src/first-word.rs"
+
+[[bin]]
+name = "rectangle"
+path = "src/rectangle.rs"
