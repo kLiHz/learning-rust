@@ -10,3 +10,7 @@ edition = "2021"
 [[bin]]
 name = "fibo-seq-recursive"
 path = "src/fibo-seq-recursive.rs"
+
+[[bin]]
+name = "first-word"
+path = "src/first-word.rs"
